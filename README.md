@@ -20,7 +20,7 @@ This involves 2 express apps (connected by internal request calls) and event pub
 npm install
 ```
 
-2. Run docker
+2. Run docker (make sure ports 9411,3306,5672 and 15672 are open)
 ```bash
 docker compose up
 ```
@@ -36,5 +36,6 @@ bash run.sh
 kj
 
 - [x] Initial demo 
-- [ ] Setup MySQL for Zipkin
+- [x] Setup MySQL for Zipkin
+- [ ] Periodical cleanup of zipkin mysql data
 - [ ] Enable full request tracing via middleware, instead of controller
